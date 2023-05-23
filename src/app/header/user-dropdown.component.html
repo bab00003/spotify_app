@@ -1,11 +1,21 @@
 <ul class="nav">
     <li class="nav-item dropdown">
-        <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+        <a class="nav-link text-white dropdown-toggle" href="#" id="navbardropdown" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
+            <svg class="bi p-1 user-profile-icon" width="28" height="28" color="white">
+                <use xlink:href="./assets/bootstrap-icons.svg#person-fill"/>
+            </svg>
             Username
         </a>
         <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="#">Account</a></li>
+            <li>
+                <a class="dropdown-item" href="#">
+                    Account
+                    <svg class="bi p-1" width="24" height="24" color="white">
+                        <use xlink:href="./assets/bootstrap-icons.svg#box-arrow-up-right"/>
+                    </svg>
+                </a>
+            </li>
             <li><a class="dropdown-item" href="#">Profile</a></li>
             <li><a class="dropdown-item" href="#">Log out</a></li>
         </ul>

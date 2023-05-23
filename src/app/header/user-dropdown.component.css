@@ -1,0 +1,13 @@
+.user-profile-icon{
+    border-radius: 50%;
+    background-color: black;
+}
+
+#navbardropdown {
+    background-color: black;
+    border-radius: 25px;
+}
+
+#navbardropdown:hover {
+    background-color: #4c4c4c;
+}
