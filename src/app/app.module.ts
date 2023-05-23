@@ -6,6 +6,11 @@ import { TopbarComponent } from './header/topbar.component';
 import { HistoryComponent } from './header/history.component';
 import { LibraryButtonsComponent } from './header/library-buttons.component';
 import { UserDropdownComponent } from './header/user-dropdown.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { SidebarButtonsComponent } from './sidebar/sidebar-buttons.component';
+import { SidebarPlaylistButtonsComponent } from './sidebar/sidebar-playlist-buttons.component';
+import { BodyComponent } from './body/body.component';
+import { LayoutMainComponent } from './layout/layout-main.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +18,12 @@ import { UserDropdownComponent } from './header/user-dropdown.component';
     TopbarComponent,
     HistoryComponent,
     LibraryButtonsComponent,
-    UserDropdownComponent
+    UserDropdownComponent,
+    SidebarComponent,
+    SidebarButtonsComponent,
+    SidebarPlaylistButtonsComponent,
+    BodyComponent,
+    LayoutMainComponent
   ],
   imports: [
     BrowserModule
