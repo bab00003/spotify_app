@@ -3,11 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { TopbarComponent } from './header/topbar.component';
+import { HistoryComponent } from './header/history.component';
+import { LibraryButtonsComponent } from './header/library-buttons.component';
+import { UserDropdownComponent } from './header/user-dropdown.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopbarComponent
+    TopbarComponent,
+    HistoryComponent,
+    LibraryButtonsComponent,
+    UserDropdownComponent
   ],
   imports: [
     BrowserModule
