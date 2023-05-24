@@ -13,6 +13,7 @@ import { BodyComponent } from './body/body.component';
 import { LayoutMainComponent } from './layout/layout-main.component';
 import { YourLibraryComponent } from './body/your-library.component';
 import { SearchPageComponent } from './body/search-page.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { SearchPageComponent } from './body/search-page.component';
     SearchPageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

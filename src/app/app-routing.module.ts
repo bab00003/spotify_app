@@ -7,7 +7,8 @@ import { SearchPageComponent } from './body/search-page.component';
 const routes: Routes = [
   { path: 'home', component: BodyComponent },
   { path: 'search', component: SearchPageComponent },
-  { path: 'your_library', component: YourLibraryComponent }
+  { path: 'your_library', component: YourLibraryComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
 @NgModule({
