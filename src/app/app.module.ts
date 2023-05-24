@@ -11,6 +11,8 @@ import { SidebarButtonsComponent } from './sidebar/sidebar-buttons.component';
 import { SidebarPlaylistButtonsComponent } from './sidebar/sidebar-playlist-buttons.component';
 import { BodyComponent } from './body/body.component';
 import { LayoutMainComponent } from './layout/layout-main.component';
+import { YourLibraryComponent } from './body/your-library.component';
+import { SearchPageComponent } from './body/search-page.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { LayoutMainComponent } from './layout/layout-main.component';
     SidebarButtonsComponent,
     SidebarPlaylistButtonsComponent,
     BodyComponent,
-    LayoutMainComponent
+    LayoutMainComponent,
+    YourLibraryComponent,
+    SearchPageComponent
   ],
   imports: [
     BrowserModule
