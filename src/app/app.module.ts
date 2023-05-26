@@ -14,6 +14,7 @@ import { LayoutMainComponent } from './layout/layout-main.component';
 import { YourLibraryComponent } from './body/your-library.component';
 import { SearchPageComponent } from './body/search-page.component';
 import { AppRoutingModule } from './app-routing.module';
+import { PlaylistCardComponent } from './body/playlist-card.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AppRoutingModule } from './app-routing.module';
     BodyComponent,
     LayoutMainComponent,
     YourLibraryComponent,
-    SearchPageComponent
+    SearchPageComponent,
+    PlaylistCardComponent
   ],
   imports: [
     BrowserModule,
