@@ -15,6 +15,8 @@ import { YourLibraryComponent } from './body/your-library.component';
 import { SearchPageComponent } from './body/search-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PlaylistCardComponent } from './body/playlist-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './header/user-info.component';
 
 @NgModule({
   declarations: [
@@ -30,11 +32,13 @@ import { PlaylistCardComponent } from './body/playlist-card.component';
     LayoutMainComponent,
     YourLibraryComponent,
     SearchPageComponent,
-    PlaylistCardComponent
+    PlaylistCardComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
