@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "spotify-app-aa942": {
+      "hosting": {
+        "spotify-app": [
+          "spotify-app-aa942"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "spotify-app-aa942"
+  }
+}
