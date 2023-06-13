@@ -19,6 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './header/user-info.component';
 import { ContentTypeCardComponent } from './body/content-type-card.component';
 import { ForYouCardComponent } from './body/for-you-card.component';
+import { EditUserInfoComponent } from './body/edit-user-info.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -37,12 +39,14 @@ import { ForYouCardComponent } from './body/for-you-card.component';
     PlaylistCardComponent,
     UserInfoComponent,
     ContentTypeCardComponent,
-    ForYouCardComponent
+    ForYouCardComponent,
+    EditUserInfoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
