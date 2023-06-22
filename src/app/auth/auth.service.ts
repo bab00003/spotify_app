@@ -9,14 +9,15 @@ import { User } from "./user.model";
     providedIn: 'root'
 })
 export class AuthService {
-    baseUrl: string = "https://identitytoolkit.googleapis.com/v1/accounts";
-    signUpEndpoint: string = "signUp";
-    signInEndpoint: string = "signInWithPassword";
-    private user: Subject<User> = new Subject<User>();
+    private baseUrl: string = "https://identitytoolkit.googleapis.com/v1/accounts";
+    private signUpEndpoint: string = "signUp";
+    private signInEndpoint: string = "signInWithPassword";
+    user: Subject<User> = new Subject<User>();
 
     public constructor(private http: HttpClient) {
 
     }
+
     public signup(email: string, password: string) {
         const requestBody = {
             "email": email,
