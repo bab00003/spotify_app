@@ -9,8 +9,8 @@ import { Observable } from "rxjs";
     templateUrl: "auth.component.html"
 })
 export class AuthComponent {
-    public buttonClicked!:string;
-    private authObservable!:Observable<AuthResponse>;
+    public buttonClicked!: string;
+    private authObservable!: Observable<AuthResponse>;
     constructor(private authService: AuthService) {
     }
 
@@ -18,14 +18,14 @@ export class AuthComponent {
         console.log("Button Clicked = " + this.buttonClicked);
         console.log(data.value);
 
-        if (this.buttonClicked=='SignUp') {
+        if (this.buttonClicked == 'SignUp') {
             this.authObservable = this.authService.signup(data.value.email, data.value.password);
         }
-        if (this.buttonClicked=='Login') {
+        if (this.buttonClicked == 'Login') {
             this.authObservable = this.authService.login(data.value.email, data.value.password);
         }
-        
-        
+
+
         this.authObservable.subscribe(
             (data: AuthResponse) => {
                 console.log(data);
